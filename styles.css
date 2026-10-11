@@ -102,3 +102,55 @@ h2 em{font-style:normal;color:var(--gold)}
 @media(max-width:820px){.site-header{height:76px}.menu-toggle{display:flex;flex-direction:column;gap:5px;border:0;background:none;padding:8px;margin-inline-start:auto}.menu-toggle span{width:23px;height:2px;background:var(--paper)}.main-nav{display:none;position:absolute;top:76px;left:0;right:0;padding:20px 6vw 25px;background:#19161a;border-bottom:1px solid var(--line);align-items:stretch;flex-direction:column;gap:0}.main-nav.open{display:flex}.main-nav a{font-size:.9rem;padding:12px 0;border-bottom:1px solid var(--line)}.language-toggle{margin-inline-start:0}.hero{grid-template-columns:1fr;padding:65px 7vw 90px;min-height:unset}.hero-content{max-width:620px}.hero h1{font-size:clamp(3.7rem,13vw,6.3rem)}.hero-art{height:300px;max-width:520px;width:100%;margin:35px auto 0}.orbit-one{width:380px;height:380px;right:calc(50% - 190px);top:auto;bottom:3%}.orbit-two{width:450px;height:450px;right:calc(50% - 225px);top:auto;bottom:-5%}.scroll-cue{bottom:20px}.section-wrap{padding:75px 7vw}.intro-grid,.next-edition,.contact-panel{grid-template-columns:1fr;gap:25px}.intro-grid h2,.next-copy h2,.contact-panel h2{font-size:clamp(2.5rem,9vw,4rem)}.intro-copy{max-width:620px}.edition-grid{grid-template-columns:1fr 1fr}.edition-card:last-child{grid-column:1/-1}.edition-card:last-child .card-art{height:180px}.next-visual{height:340px;max-width:520px;width:100%;margin:auto}.section-heading{align-items:start;flex-direction:column;gap:14px}.section-heading>p{max-width:600px}.contact-panel{gap:20px}.site-footer{padding-inline:7vw}}
 @media(max-width:520px){.announcement{font-size:.68rem}.brand-mark{width:36px;height:36px}.brand-copy small{font-size:.55rem;max-width:135px}.brand-copy strong{font-size:1.05rem}.site-header{padding-inline:5vw;gap:10px}.language-toggle{padding:6px 10px}.hero{padding-top:50px}.hero-intro{font-size:.93rem}.hero-art{height:260px}.curtain{height:76%;top:9%;width:30%}.stage-caption{bottom:24%;font-size:.6rem}.vertical-label{font-size:.48rem}.section-wrap{padding:62px 6vw}.edition-grid{grid-template-columns:1fr}.edition-card:last-child{grid-column:auto}.card-art,.edition-card:last-child .card-art{height:200px}.section-heading h2{font-size:2rem}.program-item{grid-template-columns:42px 1fr 22px;gap:10px;padding:18px 0}.program-item h3{font-size:1rem}.next-visual{height:285px}.contact-panel{padding:27px 22px}.site-footer{align-items:flex-start;flex-direction:column;gap:14px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
+
+
+/* MITF 2027 visual identity — inspired by the official "Beyond Borders" poster */
+:root{
+  --ink:#0D0606; --ink-soft:#1E2229; --paper:#F9DCB3; --muted:#D7B69A;
+  --gold:#E4C29F; --red:#991317; --red-light:#B5262D;
+  --line:rgba(249,220,179,.18); --sand:#E4C29F; --copper:#CA8C69;
+}
+body{background:var(--ink);color:#F9DCB3}
+.announcement{background:#1E2229;color:#F9DCB3}
+.site-header{background:rgba(13,6,6,.94)}
+.brand-mark{border-color:var(--gold)}
+.brand-mark span{background:var(--gold)}
+.brand-copy strong{color:var(--gold)}
+.main-nav a{color:#F1E2D0}
+.main-nav a:hover,.text-link:hover{color:#CA8C69}
+.language-toggle{color:#F9DCB3}
+.hero{background:linear-gradient(115deg,rgba(13,6,6,.98) 0%,rgba(13,6,6,.93) 38%,rgba(30,34,41,.88) 70%,rgba(153,19,23,.48) 100%)}
+.hero:before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse at 76% 82%,rgba(202,140,105,.24),transparent 36%),linear-gradient(135deg,transparent 45%,rgba(153,19,23,.13) 100%)}
+.hero h1 em{font-style:normal;color:var(--red);text-shadow:0 3px 0 rgba(249,220,179,.04)}
+.eyebrow,.section-kicker,.next-overline{color:var(--copper)}
+.eyebrow-line{background:var(--red)}
+.button-primary{background:var(--red);color:#FFF4E4}
+.button-primary:hover{background:#B5262D}
+.button-quiet{border-color:rgba(249,220,179,.5);color:var(--paper)}
+.button-outline{border-color:var(--red);color:#F9DCB3}
+.stage-light{background:linear-gradient(180deg,rgba(249,220,179,.32),rgba(202,140,105,.16) 45%,transparent 80%)}
+.curtain{background:repeating-linear-gradient(90deg,#4B0C13 0,#991317 12%,#33080D 23%,#781019 35%)}
+.stage-floor{background:linear-gradient(180deg,#4A211B,#0D0606);border-top-color:#CA8C69}
+.stage-caption{color:#F9DCB3;text-shadow:0 0 20px rgba(202,140,105,.7)}
+.stage-caption i{background:var(--red)}
+.hero-orbit{border-color:rgba(228,194,159,.18)}
+.intro-section{background:#0D0606}
+.editions-section,.program-section{background:#1E2229}
+.edition-card{background:#151719;border-color:rgba(228,194,159,.22)}
+.edition-card:hover{border-color:#CA8C69}
+.edition-index{color:#F9DCB3;border-color:#991317}
+.card-year,.art-word{color:#F9DCB3}
+.art-2025{background:linear-gradient(135deg,#991317,#1E2229 72%)}
+.art-2024{background:linear-gradient(135deg,#1E2229,#0D0606 60%,#CA8C69)}
+.art-2022{background:linear-gradient(135deg,#70452F,#1E2229 65%,#991317)}
+.art-ring{border-color:rgba(249,220,179,.68)}
+.art-sub{color:#E4C29F}
+.next-visual{background:radial-gradient(ellipse,rgba(153,19,23,.42),#1E2229 65%,transparent 66%)}
+.next-circle{border-color:rgba(228,194,159,.48)}
+.next-type{color:#F9DCB3}
+.program-list,.program-item{border-color:rgba(249,220,179,.17)}
+.program-number,.program-symbol{color:#CA8C69}
+.contact-panel{background:linear-gradient(120deg,#1E2229,#21090C);border-color:rgba(202,140,105,.38)}
+.status-note i{background:#CA8C69}
+.site-footer{background:#0D0606;border-color:rgba(249,220,179,.18)}
+@media(max-width:820px){.main-nav{background:#1E2229}}
